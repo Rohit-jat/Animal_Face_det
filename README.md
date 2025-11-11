@@ -47,7 +47,7 @@ dataset/
 │   └── ...
 └── sad/
     ├── sad_animal_1.jpg
-│   ├── sad_animal_2.jpg
+    ├── sad_animal_2.jpg
     └── ...
 ```
 
