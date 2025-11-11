@@ -166,44 +166,44 @@ def main():
         st.info("Webcam functionality will be implemented in a future version.")
         st.write("For now, please use the 'Upload Image' option.")
         
-    elif app_mode == "Instructions":
-        st.header("How to Use This Application")
+    # elif app_mode == "Instructions":
+    #     st.header("How to Use This Application")
         
-        st.subheader("1. Setup")
-        st.write("""
-        1. Install required packages: `pip install -r requirements.txt`
-        2. Prepare your dataset of animal face images organized in:
-           ```
-           dataset/
-           ├── happy/
-           └── sad/
-           ```
-        """)
+    #     st.subheader("1. Setup")
+    #     st.write("""
+    #     1. Install required packages: `pip install -r requirements.txt`
+    #     2. Prepare your dataset of animal face images organized in:
+    #        ```
+    #        dataset/
+    #        ├── happy/
+    #        └── sad/
+    #        ```
+    #     """)
         
-        st.subheader("2. Train the Emotion Classifier")
-        st.write("""
-        Run the training script to create your emotion classification model:
-        ```
-        python train_emotion.py
-        ```
-        This will create `models/emotion_model.h5` which is used for emotion prediction.
-        """)
+    #     st.subheader("2. Train the Emotion Classifier")
+    #     st.write("""
+    #     Run the training script to create your emotion classification model:
+    #     ```
+    #     python train_emotion.py
+    #     ```
+    #     This will create `models/emotion_model.h5` which is used for emotion prediction.
+    #     """)
         
-        st.subheader("3. Run the Application")
-        st.write("""
-        Start the Streamlit web application:
-        ```
-        streamlit run app.py
-        ```
-        """)
+    #     st.subheader("3. Run the Application")
+    #     st.write("""
+    #     Start the Streamlit web application:
+    #     ```
+    #     streamlit run app.py
+    #     ```
+    #     """)
         
-        st.subheader("4. Using the Application")
-        st.write("""
-        1. Select "Upload Image" from the sidebar
-        2. Upload an image containing animal faces
-        3. Click "Analyze Emotions"
-        4. View the detected animals with their emotion classifications
-        """)
+    #     st.subheader("4. Using the Application")
+    #     st.write("""
+    #     1. Select "Upload Image" from the sidebar
+    #     2. Upload an image containing animal faces
+    #     3. Click "Analyze Emotions"
+    #     4. View the detected animals with their emotion classifications
+    #     """)
 
 if __name__ == "__main__":
     main()
