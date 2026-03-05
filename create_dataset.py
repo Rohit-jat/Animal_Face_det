@@ -83,6 +83,7 @@ if __name__ == "__main__":
         try:
             num_samples = int(num_samples) if num_samples else 10
         except ValueError:
+            
             num_samples = 10
         create_sample_dataset(num_samples=num_samples)
     elif choice == '2':
